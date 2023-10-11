@@ -1,0 +1,55 @@
+<!-- 
+<nav class="nav-bar">
+    <ul class="nav-li">
+        <li>
+          <a class="category" id="category1">Shop By Category</a>
+          <ul class="submenu" id="submenu">
+            (mouseenter)="showSubmenu = true" (mouseleave)="showSubmenu = false"
+            *ngIf="showSubmenu"
+            <li>Submenu item 1</li>
+            <li>Submenu item 2</li>
+            <li>Submenu item 3</li>
+          </ul>
+        </li>
+        <li><a class="category" id="category2">By Platform</a></li>
+        <li><a id="cloud">CLOUD |||</a></li>
+        <li><a id="gamers">We're All Gamers</a></li>
+      </ul>
+      
+    </nav> -->
+
+
+      <nav >
+        <div class="nav-bar">
+        <div>
+            <img [src]="getImagePath()" alt="HyperX Logo" class="logo"/>
+          </div>
+        <ul class="nav-li">
+          <li class="category-item">
+            <a class="category" id="category1">Shop By Category</a>
+            <ul class="submenu" >
+              <li class="categ" *ngFor="let item of submenuItems">{{ item }} <img [src]="getArrowPath()" alt="HyperX Logo" class="arrow"/></li>
+            </ul>
+          </li>
+          <li><a class="category" id="category2">By Platform</a></li>
+          <li><a id="cloud">CLOUD |||</a></li>
+          <li><a id="gamers">We're All Gamers</a></li>
+        </ul></div>
+      </nav>
+      
+<!-- 
+<ul class="nav-li">
+    <li><a class="category" id="category1">Shop By Category</a>
+        <ul class="submenu">
+            <li>Submenu item 1</li>
+            <li>Submenu item 2</li>
+            <li>Submenu item 3</li>
+        </ul>
+    </li>
+    <li><a class="category" id="category2">By Platform</a></li>
+    <li><a id="cloud">CLOUD |||</a></li>
+    <li><a id="gamers">We're All Gamers</a></li>
+</ul> -->
+
+
+

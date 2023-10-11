@@ -1,0 +1,93 @@
+.nav-bar{
+display: flex;
+  height: 50px;
+  width: 80%;
+  display: inline-flex;
+  margin-left: 20%;
+
+}
+.nav-b{
+ border: 0.5px solid #e6e2e2; 
+  border-radius: 0; 
+  height: 50px;
+  width: 100%;
+}
+.nav-li{
+
+}
+ul {
+    display: flex;
+    font-family: proxima-nova,-apple-system,blinkmacsystemfont,San Francisco,Helvetica,sans-serif;
+    font-size: 16px;
+    list-style: none;
+    /* line-height: 1.5; */
+ 
+}
+li{
+    border: 0.5px solid rgb(245, 243, 243); 
+    padding: 25px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    display: flex;
+}
+
+/* Styling for the submenu */
+/* Styling for the submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: rgb(245, 243, 243);
+  border:  rgb(245, 243, 243);
+  padding: 10px;
+  width: 40%;
+
+  /* margin-left: 14%;
+  margin-top:11%;
+  max-height: fit-content; */
+  top: 8.5%; /* Reset top position */
+  max-height: calc(100% - 20px); 
+  margin-left: 14%;
+  bottom: auto; 
+    overflow-y: auto;
+
+}
+
+/* Show the submenu when hovering over the first category anchor tag */
+.category-item:hover .submenu {
+  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.logo {
+  height: 70px; /* Adjust the height as needed */
+  margin-right: 10px;
+  padding: 2%; /* Optional margin for spacing */
+}
+.arrow{
+  height: 50%; /* Adjust the height as needed */
+  margin-right: 10px;
+  padding: 2%; 
+  transform: rotate(-33deg);
+}
+.arrow:hover{
+  transform: rotate(0deg);
+}
+.categ {
+  width: 94%;
+  padding: 10px 10px;
+  background-color: rgb(245, 243, 243);
+  border-bottom:1px solid #ebe6e6;
+  cursor: pointer;
+}
+
+.categ:hover {
+  background-color: rgb(245, 243, 243)#dcdcdc;
+}
+
+/* Style the last item to remove the border */
+.categ:last-child {
+  border-bottom: none;
+} 
